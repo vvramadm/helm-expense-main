@@ -18,6 +18,7 @@ apiVersion: elbv2.k8s.aws/v1beta1
 kind: TargetGroupBinding
 metadata:
   name: expense-dev-tgb
+  namespace: expense
 spec:
   serviceRef:
     name: frontend # route traffic to the awesome-service
